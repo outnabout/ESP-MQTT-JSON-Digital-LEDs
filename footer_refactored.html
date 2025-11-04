@@ -1,0 +1,197 @@
+{% load i18n %}
+{% load static %}
+{% load theme_tags %}
+{% load tealium_tags %}
+
+<footer class="p-0 bg-primary-600 w-full">
+  <div class="flex flex-col gap-8 w-full mx-auto desktop:max-w-desktop text-white px-8 py-16">
+    <nav class="w-full flex flex-col justify-between items-start text-white gap-8">
+      <div class="w-full flex flex-col gap-8 desktop:flex-row desktop:items-start justify-between">
+        <a href="{% url 'jobdetails:index' %}" aria-label="Adecco">
+          <svg class="h-7 desktop:h-11 w-28 desktop:w-44 text-white"
+               viewBox="0 0 112 28"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path id="Logo" fill-rule="evenodd" clip-rule="evenodd" d="M39.8755 0C38.6829 0 37.8759 0.861 37.8759 2.1392V9.849C36.8617 8.897 35.3534 8.1032 33.4883 8.1032C28.0988 8.1032 25.2771 13.1054 25.2771 18.0418C25.2771 22.9768 28.0988 27.9762 33.4883 27.9762C35.444 27.9762 36.933 27.4064 37.9555 26.3032C38.1312 27.3084 38.838 27.9762 39.8755 27.9762C41.0681 27.9762 41.8724 27.1166 41.8724 25.8342V2.1392C41.8724 0.861 41.0681 0 39.8755 0ZM29.2681 18.0418C29.2681 15.1396 30.4374 11.7586 33.7298 11.7586C37.0236 11.7586 38.1847 15.1396 38.1847 18.0418C38.1847 20.9426 37.0236 24.318 33.7298 24.318C30.4374 24.318 29.2681 20.9426 29.2681 18.0418ZM87.9251 11.7586C88.975 11.7586 89.5308 12.0288 90.0633 12.2962C90.5039 12.5118 90.9499 12.7302 91.5592 12.7302C92.5899 12.7302 93.2761 11.8006 93.2761 10.9368C93.2761 9.2442 91.1283 8.1032 87.9251 8.1032C81.9468 8.1032 79.2706 13.0956 79.2706 18.0418C79.2706 22.9866 81.9468 27.9762 87.9251 27.9762C91.3685 27.9762 93.1759 26.516 93.1759 25.074C93.1759 24.0016 92.5089 23.282 91.5236 23.282C91.0158 23.282 90.6301 23.4892 90.2198 23.709C89.6694 23.996 89.0628 24.318 87.9251 24.318C84.2429 24.318 83.2616 20.3728 83.2616 18.0418C83.2616 15.7066 84.2429 11.7586 87.9251 11.7586ZM16.5664 3.9228C16.2617 3.1122 15.7059 1.6408 13.9794 1.6408C12.2653 1.6408 11.7245 3.038 11.402 3.8794C11.3897 3.9046 8.54465 11.6886 6.30899 17.7954H2.0298C0.533869 17.7954 0 18.76 0 19.586C0 20.4456 0.536614 21.3668 2.0298 21.3668H5.01343C4.22155 23.5116 3.68905 24.969 3.68905 24.969C3.5573 25.2966 3.40633 25.8314 3.40633 26.2696C3.40633 27.1306 4.03353 28 5.23713 28C6.49975 28 6.91011 27.1558 7.20792 26.5454L7.27517 26.4082L8.87129 21.98C8.87129 21.98 8.96598 21.7098 9.08813 21.3668H14.0192C15.5179 21.3668 16.0518 20.4456 16.0518 19.586C16.0518 18.76 15.5179 17.7954 14.0192 17.7954H10.37C11.3224 15.148 13.0311 10.402 13.9808 7.7742C14.9909 10.5812 18.2668 19.705 18.2737 19.7078C18.2737 19.7148 19.0752 21.9716 19.0752 21.9716C19.0752 21.98 20.6562 26.3676 20.6562 26.3676C20.8621 26.9038 21.2697 28 22.708 28C23.9157 28 24.5429 27.1306 24.5429 26.2696C24.5429 25.8314 24.3905 25.3008 24.2464 24.9452C24.2561 24.969 16.5664 3.9228 16.5664 3.9228ZM72.0806 11.7586C73.1305 11.7586 73.689 12.0288 74.2188 12.2962C74.658 12.5118 75.1054 12.7302 75.7147 12.7302C76.744 12.7302 77.4316 11.8006 77.4316 10.9368C77.4316 9.2442 75.2824 8.1032 72.0806 8.1032C66.1037 8.1032 63.4316 13.0956 63.4316 18.0418C63.4316 22.9866 66.1037 27.9762 72.0806 27.9762C75.5349 27.9762 77.3383 26.516 77.3383 25.074C77.3383 24.0016 76.674 23.282 75.679 23.282C75.1767 23.282 74.7828 23.4892 74.3807 23.709C73.8345 23.996 73.221 24.318 72.0806 24.318C68.4039 24.318 67.424 20.3728 67.424 18.0418C67.424 15.7066 68.4039 11.7586 72.0806 11.7586ZM103.558 8.1032C98.0137 8.1032 95.1097 13.1054 95.1097 18.0418C95.1097 22.9768 98.0137 27.9762 103.558 27.9762C109.1 27.9762 112 22.9768 112 18.0418C112 13.1054 109.1 8.1032 103.558 8.1032ZM103.558 24.318C100.27 24.318 99.1048 20.9426 99.1048 18.0418C99.1048 15.1396 100.27 11.7586 103.558 11.7586C106.858 11.7586 108.024 15.1396 108.024 18.0418C108.024 20.9426 106.858 24.318 103.558 24.318ZM61.3483 17.5938C61.3483 12.9276 58.2521 8.1032 53.0616 8.1032C47.4087 8.1032 44.4456 13.1054 44.4456 18.0418C44.4456 22.6254 46.7527 27.9762 53.2332 27.9762C56.774 27.9762 60.9681 25.6508 60.9681 23.688C60.9681 22.4798 60.1502 21.8274 59.3844 21.8274C58.8258 21.8274 58.3564 22.1984 57.8184 22.6254C56.9223 23.3436 55.6898 24.318 53.2703 24.318C50.5419 24.318 48.6864 22.4896 48.475 19.7302H59.1785C60.6593 19.7302 61.3483 19.0498 61.3483 17.5938ZM48.4737 16.4248C48.6356 14.8246 49.4069 11.6214 53.052 11.7586C55.9629 11.7586 57.1473 14.3864 57.3175 16.4248H48.4737Z" fill="currentColor" />
+          </svg>
+        </a>
+        <div class="flex-1 space-y-4">
+          <p class="text-small_title">Services</p>
+          <ul class="uppercase text-link_small space-y-3 desktop:space-y-none">
+            <li>
+              <a href="https://jobs.de.adecco.com"
+                 aria-label="Gehe zur Jobsuche"
+                 target="_blank"
+                 rel="noopener noreferrer">Jobsuche</a>
+            </li>
+            <li>
+              <a href="https://lebenslauf-erstellen.adecco.de/"
+                 aria-label="Entdecke unseren Lebenslauf Generator"
+                 target="_blank"
+                 rel="noopener noreferrer">Lebenslauf Generator</a>
+            </li>
+            <li>
+              <a href="/de-de/zeitarbeit"
+                 aria-label="Erfahre mehr über Zeitarbeit">Zeitarbeit</a>
+            </li>
+            <li>
+              <a href="/de-de/personalvermittlung"
+                 aria-label="Erfahre mehr über Personalvermittlung">Personalvermittlung</a>
+            </li>
+            <li>
+              <a href="https://cloud.info.adeccogroup.de/adecco_empfehlungen"
+                 aria-label="Empfehle Mitarbeiter"
+                 target="_blank"
+                 rel="noopener noreferrer">Mitarbeiter empfehlen</a>
+            </li>
+            <li>
+              <a href="/de-de/faq"
+                 aria-label="Frequently Asked Questions">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1 space-y-4">
+          <p class="text-small_title">Wir stellen ein!</p>
+          <ul class="uppercase text-link_small space-y-3">
+            <li>
+              <a href="/de-de/berufsfelder"
+                 aria-label="Gehe zu deine Berufsgruppen">Deine Berufsgruppe</a>
+            </li>
+            <li>
+              <a href="https://uat.adecco.com/de-de/vorteile#jobs"
+                 aria-label="Gehe zu deine Lebenssituation">Deine Lebenssituation</a>
+            </li>
+            <li>
+              <a href="https://www.adecco-jobs.com/amazon/de-de/"
+                 aria-label="Gehe zu Amazon Jobs"
+                 target="_blank"
+                 rel="noopener noreferrer">Amazon Jobs</a>
+            </li>
+            <li>
+              <a href="/de-de/berufsfelder/aviation"
+                 aria-label="Gehe zu 'Partnership with Airbus'">Partnership with Airbus</a>
+            </li>
+            <li>
+              <a href="/de-de/berufsfelder/medical"
+                 aria-label="Gehe zu Adecco Medical">Adecco Medical</a>
+            </li>
+            <li>
+              <a href="https://jobs.de.adecco.com/bewerben/"
+                 aria-label="Bewerbe dich initiativ"
+                 target="_blank"
+                 rel="noopener noreferrer">Initiativ bewerben</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1 space-y-4">
+          <p class="text-small_title">Über Adecco</p>
+          <ul class="uppercase text-link_small space-y-3">
+            <li>
+              <a href="/de-de/ueber-uns"
+                 aria-label="Gehe zu Über uns">Über uns</a>
+            </li>
+            <li>
+              <a href="/de-de/standorte"
+                 aria-label="Gehe zu Standorte">Standorte</a>
+            </li>
+            <li>
+              <a href="/de-de/blog" aria-label="Gehe zu Blog">Blog</a>
+            </li>
+            <li>
+              <a href="/de-de/ueber-uns/presse"
+                 aria-label="Gehe zu Presse">Presse</a>
+            </li>
+            <li>
+              <a href="https://cloud.info.adeccogroup.de/optin_adecco"
+                 aria-label="Gehe zu Newsletter"
+                 target="_blank"
+                 rel="noopener noreferrer">Newsletter</a>
+            </li>
+            <li>
+              <a href="/de-de/kontakt/kontaktformular"
+                 aria-label="Gehe zu Kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col desktop:flex-row gap-4 items-start justify-between border-t border-white pt-8 desktop:mt-8 w-full">
+        <p class="grow-3">©Adecco 2025</p>
+        <div class="grow-7 space-y-4 uppercase text-link_small">
+          <div class="flex desktop:flex-row flex-col desktop:justify-center desktop:items-center gap-3">
+            <a href="/de-de/nutzungsbedingungen-für-die-website"
+               aria-label="Nutzungsbedingungen">Nutzungsbedingungen</a>
+            <a href="/de-de/datenschutz-für-die-website"
+               aria-label="Datenschutz für die Website">Datenschutz für die Website</a>
+            <a href="/de-de/sicherheit-phishing"
+               aria-label="Sicherheit und Phishing">Sicherheit und Phishing</a>
+            <a href="/de-de/cookie-richtlinien"
+               aria-label="Cookie-Richtlinie">Cookie-Richtlinie</a>
+            <button @click="Optanon.ToggleInfoDisplay()"
+                    aria-label="Ändere Cookie-Einstellungen"
+                    class="uppercase">Cookie-Einstellungen</button>
+            <a href="/de-de/allgemeine-geschaeftsbedingungen"
+               aria-label="AGB">AGB</a>
+          </div>
+          <div class="flex desktop:flex-row flex-col desktop:justify-center desktop:items-center gap-3">
+            <a href="https://www.adeccogroup.de/verhaltenskodex"
+               aria-label="Code of Conduct"
+               target="_blank"
+               rel="noopener noreferrer">Code of Conduct</a>
+            <a href="https://secure.ethicspoint.eu/domain/media/de/gui/7017/index.html"
+               aria-label="Beschwerdestelle"
+               target="_blank"
+               rel="noopener noreferrer">Beschwerdestelle</a>
+            <a href="/de-de/impressum"
+               aria-label="Impressum">Impressum</a>
+          </div>
+        </div>
+        <div class="flex grow-3 gap-4 mt-4 desktop:mt-0 desktop:items-center desktop:justify-center">
+          <a href="https://www.facebook.com/AdeccoDeutschland/"
+             target="_blank"
+             aria-label="Finde uns auf Facebook"
+             rel="noopener"
+             {% tealium_outbound_click_event %}>
+            <p class="sr-only" id="visit-facebook">Facebook</p>
+            <svg width="24"
+                 height="24"
+                 viewBox="0 0 24 24"
+                 fill="white"
+                 xmlns="http://www.w3.org/2000/svg">
+              <g id="Facebook">
+              <path id="Vector" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" />
+              <path id="Vector_2" d="M15.0172 12.4706H12.876V20.3152H9.63181V12.4706H8.08887V9.71376H9.63181V7.92974C9.63181 6.65397 10.2378 4.65625 12.9049 4.65625L15.3079 4.6663V7.34233H13.5644C13.2784 7.34233 12.8762 7.48523 12.8762 8.09381V9.71632H15.3007L15.0172 12.4706Z" fill="#030C18" />
+              </g>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/adecco/life/51a52af3-f141-4e85-9346-a5da87d850eb/"
+             target="_blank"
+             aria-label="Finde uns auf LinkedIn"
+             rel="noopener"
+             {% tealium_outbound_click_event %}>
+            <p class="sr-only" id="visit-linkedin">linkedin</p>
+            <svg width="24"
+                 height="24"
+                 viewBox="0 0 24 24"
+                 fill="white"
+                 xmlns="http://www.w3.org/2000/svg">
+              <g id="LinkedIn">
+              <path id="Vector" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" />
+              <g id="Group_2">
+              <path id="Vector_2" d="M19.1698 12.9651V17.9124H16.3014V13.2967C16.3014 12.1377 15.8873 11.3462 14.8488 11.3462C14.0562 11.3462 13.5854 11.8791 13.3775 12.395C13.302 12.5794 13.2825 12.8355 13.2825 13.0941V17.9122H10.4139C10.4139 17.9122 10.4525 10.0946 10.4139 9.28539H13.2827V10.5079C13.2769 10.5175 13.2688 10.5269 13.2637 10.5361H13.2827V10.5079C13.6639 9.92135 14.3437 9.08282 15.8678 9.08282C17.755 9.08282 19.1698 10.3158 19.1698 12.9651ZM7.4132 5.12695C6.43199 5.12695 5.79004 5.77104 5.79004 6.61727C5.79004 7.44554 6.41338 8.10824 7.37555 8.10824H7.39416C8.39462 8.10824 9.01668 7.44554 9.01668 6.61727C8.99764 5.77104 8.39462 5.12695 7.4132 5.12695ZM5.96053 17.9124H8.82801V9.28539H5.96053V17.9124Z" fill="#030C18" />
+              </g>
+              </g>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/adecco_deutschland/"
+             target="_blank"
+             aria-label="Finde uns auf Instagram"
+             rel="noopener"
+             {% tealium_outbound_click_event %}>
+            <p class="sr-only" id="visit-instagram">Instagram</p>
+            <img src="{% static "icons/icon-instagram-dark.png" %}" alt="Instagram" class="w-6 h-6" />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</footer>
